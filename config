@@ -1,0 +1,84 @@
+Build Configuration (mc:):
+WRLINUX_VERSION      = "10.26.17.0"
+WRLINUX_BRANCH       = "development"
+BB_VERSION           = "2.16.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "x86_64-wrs-linux"
+MACHINE              = "qemux86-64"
+SDKMACHINE           = "x86_64"
+DISTRO               = "wrlinux"
+DISTRO_VERSION       = "10.26.17.0"
+TUNE_FEATURES        = "m64 x86-64-v3"
+DEFAULTTUNE          = "x86-64-v3"
+XILINX_RELEASE_VERSION = "v2025.2"
+lib32:  TARGET_SYS        = "i686-wrsmllib32-linux"
+lib32:  TUNE_FEATURES     = "m32 core2"
+lib32:  DEFAULTTUNE       = "core2-32"
+wrlinux              
+wrlinux-distro       = "WRLINUX_10_26_LTS:9fd5bb9719437b093debab968edcddbf519c9e10"
+meta                 = "HEAD:2e5d5b46cf5704bebc3feb4e78d536cc85c773bd"
+meta-initramfs       
+meta-xfce            
+meta-oe              
+meta-filesystems     
+meta-webserver       
+meta-networking      
+meta-python          
+meta-perl            
+meta-gnome           
+meta-multimedia      = "HEAD:818046faabbf8d6e3c81b0baaa0e5a583eaedf49"
+meta-security        = "HEAD:fff6968cef4a50aeb57a1930f707811af8412210"
+meta-selinux         = "HEAD:46075ef827d3c41b59b29694996bc985488aab35"
+intel-x86            = "HEAD:1308d40d8c6b70e1651f23691150f228481b2871"
+meta-virtualization  = "HEAD:b635f8415c8476dcb52144936c1616667754c75a"
+meta-mingw           = "HEAD:dd919e44fe0b0a2bcad8c249d3ebcdfa3a47ec26"
+wr-template          = "HEAD:ae6ae791deab69d6027369be066fbf8325ecc8ba"
+meta-yocto-bsp       
+meta-poky            = "HEAD:6609256ae8c40bb4307a878a79cdd0532e4cee5e"
+meta-efi-secure-boot 
+meta-encrypted-storage 
+meta-integrity       
+meta-signing-key     = "HEAD:a53e90af976d553da9542692399466f73900d455"
+meta-cloud-services  = "HEAD:e7f77af2253d2ddc75cf8f7cd1515a58b8971e3e"
+bcm-2xxx-rpi         = "HEAD:b7a692787d6e9f97e7586360aa9d36ce2c9375ee"
+meta-secure-core-common 
+meta-ids             
+meta-tpm2            = "HEAD:a53e90af976d553da9542692399466f73900d455"
+meta-intel           = "HEAD:511ddb7ea90499b2088248f59bab3e9d6f3c900c"
+meta-dpdk            = "HEAD:6a44b68cd579405534dac9d0ca4a281e9b239736"
+meta-intel-qat       = "HEAD:4eeadcdff270a05c8e2594742b5a2d1109ed35f7"
+meta-freescale       = "HEAD:66c3d7fa035248cbe2e316cb29627a0c0d765b45"
+meta-anaconda        = "HEAD:e907f1dc19c128c30ba978065d905168ad58e49c"
+meta-tensorflow      = "HEAD:078ed7b791faa38553ecf8e93048bd463f6edc8f"
+meta-clang           = "HEAD:78c5e12f08198f4f257a9348516d2103cd617c1d"
+meta-xilinx-tools    = "HEAD:37a96bae8030723c1da481a5f574d6b809f664c9"
+meta-raspberrypi     = "HEAD:807c0d9977d609cfe73241956993a6e8de93ff50"
+wr-sbom              = "HEAD:e7eb23bb0e4001740a871b5ad0f7011b3c26a75b"
+meta-xilinx-standalone 
+meta-xilinx-core     
+meta-xilinx-bsp      
+meta-microblaze      = "HEAD:5c43983d72f7e1a5ab21323b4bbd1ec331e5e40e"
+meta-freescale-distro = "HEAD:dab930c1ba0449dc99127cc6b90d8b97a21e062d"
+meta-arm             = "HEAD:8eb10af8092dc3fff86891339fd024d8583f457f"
+meta-qt6             = "HEAD:75a43f32104e1f53ae5e56b687ecda1fe33f336d"
+wr-kernel-dev        = "HEAD:05168ffe615d3dc73800b97a249a25f86b1f8f16"
+meta-aws             = "HEAD:b6b7727d25f772d39bafbf5e2b47c0706961b515"
+meta-imx-ml          
+meta-imx-sdk         
+meta-imx-bsp         = "HEAD:dc078884d1e8904f607e712d72e9ec6f2d9e04ae"
+amd-zynqmp           = "HEAD:8e36e63ffe6dec61f2a8a9101efdae9391f14058"
+meta-tegra           = "HEAD:88f3b2867a5d62f32b9d2b793c4b8e161672c21a"
+nvidia-orin          = "HEAD:a3624c34680b59d595fa1cfc38bf64fce377c64b"
+meta-xilinx-mali400  = "HEAD:5c43983d72f7e1a5ab21323b4bbd1ec331e5e40e"
+meta-openvino        = "HEAD:0ab9b9c83b3d95a846a73c6126b988f501e8e24d"
+meta-arm-toolchain   = "HEAD:8eb10af8092dc3fff86891339fd024d8583f457f"
+meta-tegra-community = "HEAD:f4cb8352b876d45b264dcab634405132bd95d274"
+meta-xilinx-standalone-sdt = "HEAD:5c43983d72f7e1a5ab21323b4bbd1ec331e5e40e"
+meta-footprint       = "HEAD:2bb5982238786b0f972cf5340b6f6c2d63995a44"
+meta-xilinx-multimedia = "HEAD:5c43983d72f7e1a5ab21323b4bbd1ec331e5e40e"
+meta-amd-adaptive-socs-bsp = "HEAD:7e509501ce6f60b980c95760455000d67ed4c232"
+wr-llm               = "HEAD:4debea74b396d62e58fb22207d2df7f7b11f3bec"
+meta-freescale-ml    = "HEAD:8c4f628daa58493dd2d2f51997f520a87d8d7f85"
+wrlinux-src-dl       = "HEAD:564245e617df57a7fdad800f06254bd9be14c944"
+local                = "master:82700a1d1ea11cf575e8d6c1990cb3cab075f48b"
